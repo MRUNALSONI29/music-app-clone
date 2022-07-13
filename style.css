@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab:wght@300;500&display=swap');
+body {
+    background-color: #1d1e4e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #000000;
+    height: 44px;
+    color: white;
+}
+
+nav ul li{
+
+    padding: 0 12px;
+
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('16.png');
+    background-repeat: no-repeat;
+    background-size: 74vw;
+    background-position: center;
+    
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#bar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 24px;
+}
+.icons{
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top: 74px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 150%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+    width: 45px;
+    margin: 0 23px;
+    border-radius: 34px
+    
+}
+.timestamp{
+    margin: 0 20px;
+  
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songplay{
+    size: 2em;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: dimgray;
+    }
+  }
